@@ -35,8 +35,9 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
           },
         ],
+      },
       {
-        test: /\.m?js$/,
+        test: /\.js$/,
         use: {
           loader: "babel-loader",
           option: {
