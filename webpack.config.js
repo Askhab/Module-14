@@ -8,17 +8,24 @@ module.exports = {
   entry: {
     main: './src/js/button.js'
   },
-
+  
+  devServer: {
+    contentBase: './build',
+  },
+  
+  plugins: [
+    // new MiniCssExtractPlugin({template: './build/build.css'}),
+    new HtmlWebpackPlugin({
+      title: 'Button',
+      template: './build/index.html',
+    }),
+  ],
+  
   output: {
-    filename: 'build.js',
+    filename: '[name].build.js',
     path: path.resolve(__dirname, 'build'),
     clean: true,
   },
-
-  plugins: [
-    // new MiniCssExtractPlugin({template: './build/build.css'}),
-    new HtmlWebpackPlugin({template: './build/index.html'}),
-  ],
 
   module: {
     rules: [
