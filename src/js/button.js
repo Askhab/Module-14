@@ -1,8 +1,12 @@
 import styles from '../css/button.css';
 
-function addButton() {
+
+
+export function addButton() {
   const button = document.createElement('button');
   
+  button.innerText = 0 + " клик";
+
   return button;
 }
 
@@ -13,4 +17,3 @@ function addButton() {
 //   button.innerHTML = `${count} клик`;
 // });
   
-document.body.appendChild(addButton());
