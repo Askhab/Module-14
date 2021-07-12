@@ -1,3 +1,5 @@
-import addButton from './button.js';
+import { admin, sayHi } from "./button.js";
 
-document.body.appendChild(addButton());
+console.warn(admin.name);
+
+sayHi();

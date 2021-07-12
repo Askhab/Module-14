@@ -1,19 +1,5 @@
-import styles from '../css/button.css';
+export let admin = {};
 
-
-
-export function addButton() {
-  const button = document.createElement('button');
-  
-  button.innerText = 0 + " клик";
-
-  return button;
+export function sayHi() {
+  console.log(`Ready to serve ${admin.name}`);
 }
-
-// let count = 0;
-// button.addEventListener('click', (event) => {
-//   event.preventDefault();
-//   count += 1;
-//   button.innerHTML = `${count} клик`;
-// });
-  
