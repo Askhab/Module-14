@@ -1,5 +1,9 @@
-export let admin = {};
+// import styles from '../css/button.css';
 
-export function sayHi() {
-  console.log(`Ready to serve ${admin.name}`);
+export function addButton() {
+  const button = document.createElement('button');
+  // button.classList.add(styles.clickMe);
+  button.classList.add('clickMe');
+
+
 }

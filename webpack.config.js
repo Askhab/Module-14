@@ -13,7 +13,8 @@ module.exports = {
     })
   ],
   output: {
-    filename: 'build.js',
-    path: path.resolve(__dirname,dist),
+    filename: '[name].build.js',
+    path: path.resolve(__dirname, 'build'),
+    clean: true,
   },
 };

@@ -1,5 +1,5 @@
-import { admin, sayHi } from "./button.js";
+// import { addButton } from "./button.js";
 
-console.warn(admin.name);
+// addButton();
 
-sayHi();
+console.log(`Hello from webpack-dev-server!`);

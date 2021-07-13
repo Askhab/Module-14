@@ -9,7 +9,7 @@ body {
   padding: 10vmax;
 }
 
-button {
+.clickMe {
   width: 70px;
   height: 30px;
   background-color: #0fae7f;
