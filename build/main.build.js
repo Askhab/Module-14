@@ -15,7 +15,7 @@
   \*************************/
 /***/ (() => {
 
-eval("// import { addButton } from \"./button.js\";\r\n\r\n// addButton();\r\n\r\nconsole.log(`Hello from webpack-dev-server!`);\n\n//# sourceURL=webpack://button-app/./src/js/index.js?");
+eval("// import { addButton } from \"./button.js\";\n// addButton();\nvar foo = function foo(name) {\n  console.log(\"Hello \".concat(name));\n};\n\nfoo(\"Robert\");\n\n//# sourceURL=webpack://button-app/./src/js/index.js?");
 
 /***/ })
 
