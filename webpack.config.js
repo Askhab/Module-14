@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
@@ -10,7 +11,15 @@ module.exports = {
     clean: true,
   },
 
+  devServer: {
+    // constentBase: path.join(__dirname, 'build'),
+    // open: true,
+  },
+
   plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Button App',
+    }),
     new MiniCssExtractPlugin({
       filename: 'build.css',
     })
@@ -19,8 +28,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        use: ['babel-loader'],
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
       },
       {
         test: /\.css$/i,
